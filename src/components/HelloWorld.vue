@@ -45,12 +45,15 @@
 			return {
 				msg: "Welcome to Your Vue.js App"
 			};
+		},
+		mounted(){
+			console.log(aa);
 		}
 	};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 	h1,
 	h2 {
 		font-weight: normal;
