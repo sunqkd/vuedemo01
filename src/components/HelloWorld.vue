@@ -47,7 +47,7 @@
 			};
 		},
 		mounted(){
-			console.log(aa);
+			
 		}
 	};
 </script>
