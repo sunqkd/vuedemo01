@@ -9,6 +9,9 @@ export default {
         return {
             aa:'555'
         }
+    },
+    created(){
+        console.log(this.$route.params)
     }
 }
 </script>
