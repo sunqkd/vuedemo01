@@ -7,6 +7,7 @@
 
 		{{firstName}}--{{lastName}}
 		<router-link :to="{name:'aa',params:{id:123}}">aa</router-link>
+		<button @click="goaa()">点击跳转</button>
 	</div>
 </template>
 
@@ -48,7 +49,8 @@
 			this.text();
 			// this.mp();
 			// this.xz();
-			this.qc();
+			// this.qc();
+			this.asd();
 		},
 		methods: {
 			text() {
@@ -111,6 +113,18 @@
 					}
 				}
 				console.log(arr)
+			},
+			asd(){
+				console.log( [] instanceof Array);
+				console.log( {} instanceof Array);
+
+				console.log(Array.isArray([]) );
+				console.log(Array.isArray({}) );
+
+			},
+			goaa(){
+				// this.$router.push('/aa');
+				this.$router.replace("/aa")
 			}
 		},
 		mounted() {
